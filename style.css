@@ -71,7 +71,7 @@ img{display:block;max-width:100%}
 @media (hover:none){.see{display:none}.project .shot{cursor:pointer}}
 
 /* Footer */
-.foot{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.foot{margin-top:40px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .foot > span{font-size:14px;line-height:20px;letter-spacing:-.2px;color:var(--body)}
 .social{display:flex;gap:12px;flex-wrap:wrap}
 .social a{display:flex;align-items:center;gap:8px;padding:6px 10px;border-radius:6px;background:var(--pill);font-size:14px;line-height:20px;letter-spacing:-.2px;color:var(--body);transition:background .2s,color .2s}
