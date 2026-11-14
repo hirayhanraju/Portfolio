@@ -69,21 +69,25 @@
     });
     show(0);
 
-    /* Auto-rotate every 3s; pauses on hover/focus and while the popup is open */
+    /* Auto-rotate every 3s. Pauses only while a mouse hovers the card (desktop) or the popup is open. */
     const DUR = 3000, bar = card.querySelector('.prog i');
     const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-    let timer, left = DUR, started = 0, paused = false;
+    const canHover = matchMedia('(hover: hover) and (pointer: fine)').matches;
+    let timer, hovering = false;
     const runBar = () => { if (!bar) return; bar.classList.remove('run'); void bar.offsetWidth; bar.style.setProperty('--dur', DUR + 'ms'); bar.classList.add('run'); };
-    const tick = () => { show(cur + 1); restart(); };
-    const restart = () => { if (reduce) return; clearTimeout(timer); left = DUR; started = Date.now(); runBar(); if (!paused) timer = setTimeout(tick, left); };
-    const pause = () => { if (paused || reduce) return; paused = true; clearTimeout(timer); left -= Date.now() - started; if (bar) bar.style.animationPlayState = 'paused'; };
-    const resume = () => { if (!paused || reduce || ov.classList.contains('open')) return; paused = false; started = Date.now(); if (bar) bar.style.animationPlayState = 'running'; timer = setTimeout(tick, Math.max(left, 300)); };
-    card.addEventListener('mouseenter', pause); card.addEventListener('mouseleave', resume);
-    card.addEventListener('focusin', pause); card.addEventListener('focusout', resume);
-    avs.forEach(a => a.addEventListener('click', () => { paused = false; restart(); if (card.matches(':hover')) pause(); }));
-    new MutationObserver(() => { if (ov.classList.contains('open')) pause(); else { paused = true; resume(); } }).observe(ov, { attributes: true, attributeFilter: ['class'] });
-    document.addEventListener('visibilitychange', () => document.hidden ? pause() : resume());
-    restart();
+    const stop = () => { clearInterval(timer); if (bar) bar.classList.remove('run'); };
+    const start = () => {
+      stop(); if (reduce || hovering || ov.classList.contains('open') || document.hidden) return;
+      runBar(); timer = setInterval(() => { show(cur + 1); runBar(); }, DUR);
+    };
+    if (canHover) {
+      card.addEventListener('mouseenter', () => { hovering = true; stop(); });
+      card.addEventListener('mouseleave', () => { hovering = false; start(); });
+    }
+    avs.forEach(a => a.addEventListener('click', start));
+    new MutationObserver(start).observe(ov, { attributes: true, attributeFilter: ['class'] });
+    document.addEventListener('visibilitychange', start);
+    start();
   }
 })();
 
