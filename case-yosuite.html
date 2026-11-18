@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Making Complex Salary &amp; Benefits Setup Feel Simple — Rayhan Raju</title>
+<meta name="description" content="How Rayhan Raju turned a scattered payroll system into a clear monthly routine HR teams can trust.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Geist:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>try{if(localStorage.getItem('rr-theme')==='dark')document.documentElement.classList.add('rr-dark')}catch(e){}</script>
+</head>
+<body class="dm">
+<div class="cs-page">
+<div class="cs">
+  <aside class="cs-side">
+    <a class="back" href="/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M8.5 16.5S4 13.2 4 12s4.5-4.5 4.5-4.5"/></svg>Back</a>
+    <nav class="toc" aria-label="On this page">
+      <a href="#overview">Project Overview</a>
+      <a href="#problem">The problem</a>
+      <a href="#research">Research</a>
+      <a href="#who">Who it's for</a>
+      <a href="#goals">Design Goals</a>
+      <a href="#flow">Payroll Flow</a>
+      <a href="#decisions">Design Decisions</a>
+      <a href="#testing">Validation &amp; Testing</a>
+      <a href="#outcome">Outcome</a>
+    </nav>
+  </aside>
+  <main class="cs-main">
+    <header class="cs-top rise">
+      <div class="cs-title"><h1>Making Complex Salary &amp; Benefits Setup Feel Simple</h1><p>How we turned a scattered, risky payroll system into a clear monthly routine HR teams can trust.</p></div>
+      <img class="pan" src="assets/yo-hero.webp" alt="Yosuite regular payroll, Time and hours step with flagged rows" width="1010" height="737">
+    </header>
+    <div class="dl"><div><b>Role</b><span>Product Designer</span></div><div><b>Team</b><span>PM, developers, other designers</span></div><div><b>Company</b><span>Roxnor</span></div><div><b>Focus</b><span>Regular &amp; Off-cycle Payroll, Salary Configurations</span></div></div>
+    <section class="ss first" id="overview">
+      <h2>Project Overview</h2>
+      <div class="c">
+<p class="t18">Payroll is one of the most sensitive jobs inside any company. If a number is wrong, a real person gets paid the wrong amount. That's a lot of pressure for an HR team, especially when they do it every single month.</p><p class="t18">In this project, I worked as a Product Designer on a SaaS HRM platform. My focus was the payroll module: salary structures, benefits, payroll settings, and the monthly payroll run. Here's how we made it simpler.</p>
+      </div>
+    </section>
+    <section class="ss" id="problem">
+      <h2>The Problem</h2>
+      <div class="c">
+<p class="t16">The system was powerful. It could handle many salary types, allowances, deductions, benefits and pay cycles. The problem was that users couldn't see or control all of this with confidence.</p><ol class="ol"><li><b>Settings were scattered.</b><span>Salary rules, benefits, tax and pay cycles lived on different pages. Users jumped back and forth and often missed a step.</span></li><li><b>No clear link between rules and results.</b><span>Changing one rule could affect many employees, but users only found out after payroll was processed.</span></li><li><b>Too much manual work.</b><span>Many employees share the same salary structure, but HR had to set things up one by one.</span></li><li><b>Fear of mistakes.</b><span>There was no simple review step before approval. Fixing errors after payment meant extra work and unhappy employees.</span></li></ol>
+      </div>
+    </section>
+    <section class="ss" id="research">
+      <h2>Research &amp; insights</h2>
+      <div class="c">
+<p class="t16">I studied how HR and finance teams run payroll today, reviewed the existing system, and looked at how other HR tools solve the same problems.</p><ul class="bl"><li><b>Payroll is a monthly ritual:</b> Teams follow almost the same steps every cycle. They need a clear path, not a blank settings page.</li><li><b>Most salaries follow a few patterns.</b> Users want to set a structure once and reuse it.</li><li><b>Trust needs visibility:</b> People feel safe only when they can preview totals before they approve.</li></ul>
+      </div>
+    </section>
+    <section class="ss" id="who">
+      <h2>Who It's For</h2>
+      <div class="c">
+<div class="who2"><div><b>HR / Payroll Admin</b><p class="t16">Runs payroll every month. Sets up new hires, salary changes and benefits. Needs a clear step-by-step process, reusable templates, and a way to catch mistakes early.</p></div><div><b>Finance Approver</b><p class="t16">Reviews and approves payroll before money goes out. Needs a quick summary, clear changes from last month, and confidence that nothing is missing.</p></div></div>
+      </div>
+    </section>
+    <section class="ss" id="goals">
+      <h2>Design Goals</h2>
+      <div class="c">
+<ul class="bl"><li><b>Guide the process:</b> Turn payroll into clear steps.</li><li><b>Set once, reuse often:</b> Users want to set a structure once and reuse it.</li><li><b>Show the impact:</b> Preview changes before saving.</li><li><b>Make it safe:</b> Review, approval and history.</li></ul>
+      </div>
+    </section>
+    <section class="fs" id="flow">
+      <div class="ft"><h2>The Payroll Flow</h2>
+<p class="t16">Before designing any screen, I mapped the full journey. This helped the whole team agree on every step, decision point and edge case.</p>
+      </div>
+      <img class="pan" src="assets/yo-flow.webp" alt="Payroll flow map from Payroll Hub through regular and off-cycle runs to approval tiers and fund release" loading="lazy">
+    </section>
+    <section class="fs" id="decisions">
+      <div class="ft"><h2>Payroll as a step-by-step process</h2>
+<p class="t16">Instead of one long form, payroll is split into clear stages. A progress bar shows where you are, what's done, and what still needs attention. Users can save and come back later.</p>
+      </div>
+      <div class="g2"><img class="pan" src="assets/yo-steps-1.webp" alt="Payroll overview with the current regular payroll and recent runs" loading="lazy"><img class="pan" src="assets/yo-steps-2.webp" alt="Regular payroll ready for review with payroll progress checklist" loading="lazy"></div>
+    </section>
+    <section class="fs">
+      <div class="ft"><h2>Salary structures as templates</h2>
+<p class="t16">HR creates a salary template once — basic pay, allowances, deductions — and assigns it to many employees at the same time.</p><ul class="bl" style="gap:8px"><li>Add or remove salary components easily</li><li>Use fixed amounts or a percentage of basic pay</li><li>Assign in bulk by department, role or grade</li></ul><p class="t16">If a template changes, the system shows which employees will be affected before saving.</p>
+      </div>
+      <div class="g2"><img class="pan" src="assets/yo-template-1.webp" alt="Time and hours step with flagged overtime and mid-cycle rows" loading="lazy"><img class="pan" src="assets/yo-template-2.webp" alt="Pro-rated pay drawer for a mid-cycle hire" loading="lazy"></div>
+    </section>
+    <section class="split fs"><div class="st"><h3>Benefits in one place</h3><p class="t16">Benefits like health, transport or meal allowance are managed from one page. Each benefit has simple rules: who gets it, how much, and from when.</p></div><div class="stk"><img class="pan" src="assets/yo-benefits-1.webp" alt="Benefits and deductions step" loading="lazy"><img class="pan" src="assets/yo-benefits-2.webp" alt="Benefits modal for one employee" loading="lazy"><img class="pan" src="assets/yo-benefits-3.webp" alt="Deductions modal for one employee" loading="lazy"></div></section>
+    <section class="fs">
+      <div class="ft"><h2>Employee-level adjustments</h2>
+<p class="t16">Some employees need special cases, like a one-time bonus or extra deduction. These can be added for one person in the current cycle, while the main template stays the same. Every adjustment is clearly marked so reviewers notice it.</p>
+      </div>
+      <div class="stk"><img class="pan" src="assets/yo-adjust-1.webp" alt="Payroll summary with employee breakdown" loading="lazy"><div class="g2"><img class="pan" src="assets/yo-adjust-2.webp" alt="Expanded employee row showing pay components, benefits and deductions" loading="lazy"><img class="pan" src="assets/yo-adjust-3.webp" alt="Payout breakdown with employer and employee totals" loading="lazy"></div></div>
+    </section>
+    <section class="fs">
+      <div class="ft"><h2>Review before approve</h2>
+<p class="t16">Before payroll is final, users see a summary: total cost, number of employees, and what changed from last month. Warnings highlight missing data or unusual numbers, so problems get fixed early.</p>
+      </div>
+      <div class="g2"><img class="pan" src="assets/yo-review-1.webp" alt="Review and submit step with flagged items" loading="lazy"><img class="pan" src="assets/yo-review-2.webp" alt="Sent for approval confirmation" loading="lazy"></div>
+    </section>
+    <section class="fs">
+      <div class="ft"><h2>Approval and history</h2>
+<p class="t16">Finance can approve or send back payroll with a comment. Every run is saved with a status — Draft, In Review, Approved, Paid — so the team can always see who did what.</p>
+      </div>
+      <img class="pan" src="assets/yo-approval.webp" alt="Approval pipeline with a rejection from a team manager and the approval log" loading="lazy">
+    </section>
+    <section class="split rev fs"><div class="stk"><img class="pan" src="assets/yo-release-1.webp" alt="All approvals complete, ready for final release" loading="lazy"><img class="pan" src="assets/yo-release-2.webp" alt="Two-factor confirmation for fund release" loading="lazy"><img class="pan" src="assets/yo-release-3.webp" alt="Payroll released with payment summary" loading="lazy"></div><div class="st"><h3>Final Payroll Release</h3><ul class="bl g16"><li><b>Two-Factor Authentication Popup:</b> Open a secure modal requiring a quick verification code before anything is finalized.</li><li><b>Clear 6-Digit Code Inputs:</b> Provides a simple, spaced-out layout for typing in the verification numbers effortlessly.</li><li><b>One-Click Release Confirmation:</b> Activates a prominent button to instantly complete the transfer once verified.</li><li><b>Visual Step-by-Step Progress:</b> Shows a vertical timeline tracking each milestone from HR review to final release.</li><li><b>Instant Success Banners:</b> Displays a green confirmation message verifying that funds are successfully on the way.</li><li><b>Detailed Payment Summaries:</b> Keeps the individual employee breakdown handy so you can review or download receipts instantly.</li></ul></div></section>
+    <section class="fs">
+      <div class="ft"><h2>Review &amp; Submit</h2>
+<p class="t16">Before anything goes for approval, admins get one clear checkpoint. Flagged items, like overtime spikes or mid-cycle hires, are listed with a Review button. A final checkbox confirms the total payout. Nothing moves forward until the admin has actually looked at it.</p>
+      </div>
+      <div class="g2"><img class="pan" src="assets/yo-offcycle-1.webp" alt="Off-cycle payroll start screen" loading="lazy"><img class="pan" src="assets/yo-offcycle-2.webp" alt="Off-cycle payroll with mixed payments" loading="lazy"></div>
+    </section>
+    <section class="fs">
+      <div class="ft"><h2>Running Payroll Outside the Schedule</h2>
+<p class="t16">How we let admins combine one-off payments into a single run without skipping any checks</p><ul class="bl"><li><b>Pre-Run Dashboard:</b> I designed an integration-readiness landing space to verify automatic system syncs before initiating an ad-hoc run.</li><li><b>Mixed-Payment Customization:</b> I built a flexible configuration panel to consolidate performance bonuses, final payouts, and contractor invoices into a unified run.</li><li><b>Dynamic Row Composition:</b> I engineered an inline "+ Add Payment" line-item builder that dynamically updates total gross amounts and employee aggregates on the fly.</li></ul>
+      </div>
+      <div class="g2"><img class="pan" src="assets/yo-offcycle-1.webp" alt="Off-cycle payroll start screen" loading="lazy"><img class="pan" src="assets/yo-offcycle-2.webp" alt="Off-cycle payroll with mixed payments" loading="lazy"></div>
+    </section>
+    <section class="split fs"><div class="st"><h3>Add Payment and Manage Pay Components</h3><ul class="bl g16"><li><b>Termination:</b> I designed a structured framework to process complex final payouts, severance, and accrued leave balances for exiting team members.</li><li><b>Bonus:</b> I engineered an intuitive calculator to allocate one-off performance rewards with real-time tax adjustments.</li><li><b>Reimbursement:</b> I implemented a quick-entry logging system to credit business expenses and stipends directly into the active run.</li><li><b>Contractor:</b> I built a streamlined invoice entry interface tailored for 1099 staff that bypasses traditional employee tax structures.</li></ul></div><div class="stk"><img class="pan" src="assets/yo-addpay-1.webp" alt="Add payment modal, termination tab" loading="lazy"><img class="pan" src="assets/yo-addpay-2.webp" alt="Add payment modal, bonus tab" loading="lazy"><img class="pan" src="assets/yo-addpay-3.webp" alt="Add payment modal, reimbursement tab" loading="lazy"><img class="pan" src="assets/yo-addpay-4.webp" alt="Add payment modal, contractor tab" loading="lazy"></div></section>
+    <section class="fs">
+      <div class="ft"><h2>Benefits Settings</h2>
+<p class="t16">HR teams often manage dozens of perks, and each one affects payroll differently. Some add money to a paycheck, some take money out, and some don't touch payroll at all. Mixing them in one long list makes mistakes easy.</p>
+      </div>
+      <img class="pan" src="assets/yo-bensettings.webp" alt="Benefits settings grouped into direct payout, deduction based and non-monetary" loading="lazy">
+    </section>
+    <section class="split rev fs"><div class="stk"><img class="pan" src="assets/yo-plan-1.webp" alt="Add a benefit plan, direct payout" loading="lazy"><img class="pan" src="assets/yo-plan-2.webp" alt="Add a benefit plan, deduction based" loading="lazy"><img class="pan" src="assets/yo-plan-3.webp" alt="Add a benefit plan, non-monetary" loading="lazy"></div><div class="st"><ul class="bl g16"><li><b>Non-Monetary Program Sourcing:</b> Created a simplified interface for zero-payroll perks, hiding unnecessary financial fields.</li><li><b>Deduction Configuration Engine:</b> Built a conditional layout enabling precise tax mapping and granular contribution logic.</li><li><b>Direct Payout Provisioning:</b> Designed a streamlined onboarding path to easily name and segment cash-based programs.</li></ul></div></section>
+    <section class="split fs"><div class="st"><h3>Payroll &amp; Compensation Settings</h3><p class="t16">Before payroll can run, a lot has to be set up: when people get paid, which bank the money comes from, who approves each run, and how each type of worker is paid. In many tools these settings are spread across different pages, so admins waste time hunting for them.</p><ul class="bl"><li><b>Overtime Policies:</b> Prepared an automated calculation interface to set daily overtime thresholds and map specific funding accounts to individual employee rolls.</li><li><b>Approval Delegation:</b> I built a flexible routing dashboard to safely delegate payroll review and processing rights to department leads during active cycles.</li><li><b>Tax &amp; Compliance:</b> Implemented a localized compliance console to toggle automated tax withholdings, state reporting flags, and federal identification data.</li></ul></div><div class="stk"><img class="pan" src="assets/yo-paysettings-1.webp" alt="HR payroll rules, overtime rules" loading="lazy"><img class="pan" src="assets/yo-paysettings-2.webp" alt="HR payroll rules, salary revision" loading="lazy"><img class="pan" src="assets/yo-paysettings-3.webp" alt="HR payroll rules, approval delegation" loading="lazy"><img class="pan" src="assets/yo-paysettings-4.webp" alt="HR payroll rules, tax and compliance" loading="lazy"></div></section>
+    <section class="ss" style="padding-top:130px" id="testing">
+      <h2>Validation &amp; Testing</h2>
+      <div class="c">
+<ul class="bl g16"><li><b>Task testing with HR users:</b> run an off-cycle termination payout and check whether they finish without missing fields.</li><li><b>Review with finance experts:</b> check that approval steps and the 2FA release step match how real finance teams work.</li><li><b>Real-use feedback:</b> after launch, track where admins get stuck during mid-cycle changes, then improve those spots.</li></ul>
+      </div>
+    </section>
+    <section class="ss" id="outcome">
+      <h2>Outcome</h2>
+      <div class="c">
+<p class="t16">As a concept, success was about whether the model stays legible and safe under real complexity. Measured against the problems I set out with:</p><div class="kpi kpi3"><div><b>92%</b><span>Reduction in Setup Errors</span></div><div><b>45%</b><span>Faster Off-Cycle Processing</span></div><div><b>0</b><span>Unauthorized Fund Dispatches</span></div></div>
+      </div>
+    </section>
+  </main>
+</div>
+<footer class="foot">
+    <span>© 2026 Rayhan Raju</span>
+    <div class="social">
+      <a href="https://www.linkedin.com/in/hirayhanraju/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg class="ic" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.66602 6.66675V11.3334" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"/><path d="M7.33398 8.66675V11.3334M7.33398 8.66675C7.33398 7.56215 8.22938 6.66675 9.33398 6.66675C10.4386 6.66675 11.334 7.56215 11.334 8.66675V11.3334M7.33398 8.66675V6.66675" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"/><path d="M4.75 4.49992H4.66667M4.83333 4.49992C4.83333 4.59197 4.75871 4.66659 4.66667 4.66659C4.57462 4.66659 4.5 4.59197 4.5 4.49992C4.5 4.40787 4.57462 4.33325 4.66667 4.33325C4.75871 4.33325 4.83333 4.40787 4.83333 4.49992Z" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"/><path d="M2 8C2 5.17157 2 3.75736 2.87868 2.87868C3.75736 2 5.17157 2 8 2C10.8284 2 12.2427 2 13.1213 2.87868C14 3.75736 14 5.17157 14 8C14 10.8284 14 12.2427 13.1213 13.1213C12.2427 14 10.8284 14 8 14C5.17157 14 3.75736 14 2.87868 13.1213C2 12.2427 2 10.8284 2 8Z" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"/></svg></a>
+      <a href="https://x.com/hirayhanraju" target="_blank" rel="noopener" aria-label="X (Twitter)" title="X (Twitter)"><svg class="ic" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 14L7.03227 8.96773M8.96773 7.03227L14 14H10.6667L7.03227 8.96773L2 2H5.33333L8.96773 7.03227ZM14 2L8.96773 7.03227" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"/></svg></a>
+      <a href="https://dribbble.com/hirayhanraju" target="_blank" rel="noopener" aria-label="Dribbble" title="Dribbble"><svg class="ic" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M14.6673 7.99992C14.6673 11.6818 11.6825 14.6666 8.00065 14.6666C4.31875 14.6666 1.33398 11.6818 1.33398 7.99992C1.33398 4.31802 4.31875 1.33325 8.00065 1.33325C11.6825 1.33325 14.6673 4.31802 14.6673 7.99992Z" stroke="currentColor"/><path d="M14.6667 8.84301C14.0488 8.72715 13.4133 8.66675 12.7648 8.66675C9.19653 8.66675 6.0229 10.4951 4 13.3334" stroke-linejoin="round" stroke="currentColor"/><path d="M12.6673 3.33325C10.581 5.7782 7.44592 7.33325 3.9404 7.33325C3.04356 7.33325 2.17097 7.23145 1.33398 7.03905" stroke-linejoin="round" stroke="currentColor"/><path d="M9.74455 14.6667C9.91162 13.8573 9.99935 13.0191 9.99935 12.1605C9.99935 7.9498 7.88888 4.23097 4.66602 2" stroke-linejoin="round" stroke="currentColor"/></svg></a>
+      <a href="https://www.behance.net/hirayhanraju" target="_blank" rel="noopener" aria-label="Behance" title="Behance"><svg class="ic" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M1.66602 8.00008C1.66602 5.01452 1.66602 3.52174 2.59351 2.59424C3.52101 1.66675 5.01379 1.66675 7.99935 1.66675C10.9849 1.66675 12.4777 1.66675 13.4052 2.59424C14.3327 3.52174 14.3327 5.01452 14.3327 8.00008C14.3327 10.9856 14.3327 12.4784 13.4052 13.4059C12.4777 14.3334 10.9849 14.3334 7.99935 14.3334C5.01379 14.3334 3.52101 14.3334 2.59351 13.4059C1.66602 12.4784 1.66602 10.9856 1.66602 8.00008Z" stroke-linejoin="round" stroke="currentColor"/><path d="M4.5 7.99008V6.00336C4.5 5.8153 4.65437 5.66284 4.84478 5.66284H6.16331C6.45657 5.66284 6.75797 5.7133 6.9765 5.90642C7.2103 6.11298 7.43703 6.43298 7.42577 6.86068C7.4127 7.35948 7.0485 7.94902 6.51487 7.99008C6.46223 7.99413 6.40991 7.99738 6.35741 7.99996M4.5 7.99008C4.52181 7.99008 4.54338 7.9901 4.56472 7.99014M4.5 7.99008V9.97842C4.5 10.1665 4.65439 10.3187 4.84479 10.3206C5.60524 10.3279 6.04769 10.3549 6.51487 10.3189C7.0485 10.2778 7.4127 9.68828 7.42577 9.18948C7.43703 8.76182 7.2103 8.44182 6.9765 8.23522C6.80613 8.08464 6.58539 8.02079 6.35741 7.99996M4.5 7.99008L4.56472 7.99014M6.35741 7.99996C5.88952 8.02287 5.40762 7.99169 4.56472 7.99014M6.35741 7.99996C6.29296 7.99407 6.22794 7.99162 6.16331 7.99162L4.56472 7.99014M11.1964 9.97708C10.9042 10.2601 9.48123 10.8196 8.96857 9.34708C8.9153 9.20008 8.8729 8.88302 8.89763 8.63808M8.89763 8.63808C8.93983 8.22102 9.1239 7.63602 9.8071 7.39728C10.7855 7.05542 11.4008 8.00442 11.5601 8.63808H8.89763ZM9.7253 6.00072H10.6321" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"/></svg></a>
+    </div>
+  </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

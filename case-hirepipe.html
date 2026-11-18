@@ -3,163 +3,121 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hirepipe — Rayhan Raju</title>
-<meta name="description" content="Rayhan Raju — Product Designer at Roxnor, based in Dhaka.">
+<title>One Job, Many Hiring Cycles, And No Candidate Left Behind — Rayhan Raju</title>
+<meta name="description" content="Hirepipe, a recruitment workspace concept by Rayhan Raju with versioned hiring cycles.">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Geist:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script>try{if(localStorage.getItem('rr-theme')==='dark')document.documentElement.classList.add('rr-dark')}catch(e){}</script>
 </head>
 <body>
-<div class="page">
-  <nav class="nav inset" aria-label="Primary">
-    <a href="/"><svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path d="M10.6 2.6a2.2 2.2 0 012.8 0l7 5.8c.5.4.8 1 .8 1.7V19a3 3 0 01-3 3h-3.2v-5.5a1 1 0 00-1-1h-3.8a1 1 0 00-1 1V22H5.8a3 3 0 01-3-3v-8.9c0-.7.3-1.3.8-1.7z"/></svg>Home</a>
-    <a href="/about"><svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M6 2.5h12A3.5 3.5 0 0121.5 6v12a3.5 3.5 0 01-3.5 3.5H6A3.5 3.5 0 012.5 18V6A3.5 3.5 0 016 2.5zm6 4a3 3 0 100 6 3 3 0 000-6zm-5 11.2c.9-2 2.8-3.2 5-3.2s4.1 1.2 5 3.2c.2.4-.1.8-.5.8h-9c-.4 0-.7-.4-.5-.8z"/></svg>About</a>
-    <a href="https://drive.google.com/file/d/1BG3UXGlWHrdBLkJpEtNa-a2Io6GpRVyj/view?usp=sharing" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M7 2h6.6c.5 0 1 .2 1.4.6l4.4 4.4c.4.4.6.9.6 1.4V19a3 3 0 01-3 3H7a3 3 0 01-3-3V5a3 3 0 013-3zm6 1.8V7a2 2 0 002 2h3.2zM7.5 14v4h1.2v-1.3h.7a1.35 1.35 0 000-2.7zm1.2 1h.7a.35.35 0 010 .7h-.7zm2.6-1v4h1.3a2 2 0 000-4zm1.2 1h.1a1 1 0 010 2h-.1zm3-1v4h1.2v-1.5h1.4v-1h-1.4V15h1.6v-1z"/></svg>Resume</a>
-    <button type="button" data-theme-toggle aria-label="Toggle dark mode"><svg class="ic" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4.6"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2.5v1.6M12 19.9v1.6M2.5 12h1.6M19.9 12h1.6M5.3 5.3l1.1 1.1M17.6 17.6l1.1 1.1M5.3 18.7l1.1-1.1M17.6 6.4l1.1-1.1"/></g></svg></button>
-  </nav>
-
-  <header class="cs-head rise">
-    <h1>Hirepipe: One Job, Many Hiring Cycles, And No Candidate Left Behind</h1>
-    <p>A recruitment workspace that treats every job as a series of versioned hiring cycles — so teams can evolve a role over time without ever losing the candidates already in flight.</p>
-  </header>
-  <div class="img rise" style="aspect-ratio:1280/600"><div class="ph ph-hire"><span>Hirepipe dashboard<br>assets/card-hirepipe.jpg</span></div><img src="assets/card-hirepipe.jpg" alt="Hirepipe dashboard" loading="lazy" onerror="this.remove()"></div>
-  <div class="cs-body">
+<div class="cs-page">
+<div class="cs">
+  <aside class="cs-side">
+    <a class="back" href="/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M8.5 16.5S4 13.2 4 12s4.5-4.5 4.5-4.5"/></svg>Back</a>
     <nav class="toc" aria-label="On this page">
       <a href="#overview">Project Overview</a>
       <a href="#problem">The problem</a>
       <a href="#research">Research</a>
       <a href="#competitors">Competitor Analysis</a>
-      <a href="#who">Who it's for</a>
       <a href="#opportunities">Design opportunities</a>
       <a href="#flow">User Flow</a>
       <a href="#decisions">Design Decisions</a>
       <a href="#outcome">Outcome</a>
     </nav>
-    <main class="cs-main">
-      <section class="sec" id="overview">
-        <h2>Project Overview</h2>
-        <div class="body">
-          <p class="p">Most applicant-tracking tools treat a job post as a single, static record. But in the real world a role is rarely hired for just once — it reopens, the salary shifts, the interview process changes, and each run attracts a different set of candidates. Editing one static post to reflect those changes quietly corrupts the history of everyone already in the pipeline.</p>
-          <p class="p" style="padding-bottom:4px">HirePipe is a concept exploring a different model: a job isn't one record, it's a living draft plus a growing stack of <strong>frozen versions.</strong> The design challenge was to make that power feel simple — navigable, unambiguous, and safe — at enterprise scale.</p>
-          <div class="dl">
-            <div><b>Role</b><span>Product Designer<br>(UX + UI)</span></div>
-            <div><b>Scope</b><span>Research, flows,<br>UI, design system</span></div>
-            <div><b>Timeline</b><span>4 design sprints</span></div>
-            <div><b>Focus</b><span>Complex workflow<br>&amp; system design</span></div>
-          </div>
-        </div>
-      </section>
-      <section class="sec" id="problem">
-        <h2>The Problem</h2>
-        <div class="body">
-          <div><p class="lead">A job post is not a static entity:</p><p class="sub">I kept running into the same structural tension when I mapped how recruiters actually work</p></div>
-          <ol class="ol">
-            <li><b>Roles repeat</b><span>The same position is published again and again over months, each time with tweaks to salary, requirements, or the hiring pipeline.</span></li>
-            <li><b>Candidates get stranded</b><span>Editing a live post to make those tweaks scrambles the people already mid-process — their stage, notes, and what they applied to.</span></li>
-            <li><b>History disappears</b><span>Overwriting a post erases the ability to compare cycles — which version attracted better candidates, where people dropped off.</span></li>
-          </ol>
-          <blockquote class="quote"><q style="quotes:none">How do you let a role evolve freely over time, without ever disturbing the candidates already inside it?</q></blockquote>
-        </div>
-      </section>
-      <section class="sec" id="research">
-        <h2>Research &amp; insights</h2>
-        <div class="body" style="gap:8px">
-          <p class="lead">Understanding how recruiters really work</p>
-          <p class="p">I studied how established hiring platforms structure pipelines and reposting, and mapped the recurring behaviours into a few insights that shaped the whole system.</p>
-        </div>
-        <div class="cards3">
-          <div class="icard sm"><b>Pipelines drift</b><p>Stages get renamed and reordered constantly, so the system can't rely on stage names to stay consistent.</p></div>
-          <div class="icard sm"><b>Reposting is a cycle</b><p>Recruiters think in "rounds" — the closest real pattern to versions is reopening a requisition.</p></div>
-          <div class="icard sm"><b>Nothing can be lost</b><p>Candidate records are kept for comparison, audit, and compliance — deletion is rarely acceptable.</p></div>
-        </div>
-      </section>
-      <section class="sec" id="competitors">
-        <h2>Competitor analysis</h2>
-        <div class="body" style="gap:8px">
-          <p class="lead">Grounded in how the category actually works</p>
-          <p class="p">The model isn't invented from nothing — its building blocks exist, scattered, across real platforms. HirePipe unifies them into one explicit version-snapshot system.</p>
-        </div>
-        <div class="comp">
-          <div class="ccard"><img class="clogo" src="assets/logo-workable.svg" alt="Workable" width="207" height="34"><p>Groups renamed stages under a standard type for consistent reporting. The real-world precedent for stable stage identity.</p></div>
-          <div class="ccard"><img class="clogo" src="assets/logo-flo.svg" alt="Flo" width="51" height="34"><p>When you delete a live-pipeline stage that holds candidates, it asks where to move them — the pipeline-evolution edge case in practice.</p></div>
-          <div class="ccard"><img class="clogo" src="assets/logo-greenhouse.svg" alt="Greenhouse" width="152" height="34"><p>Structured pipelines and per-stage analytics — the inspiration for the distribution strip and version-level reporting.</p></div>
-        </div>
-      </section>
-      <section class="sec" id="who">
-        <h2>Who it's for</h2>
-        <img class="raw" src="assets/hire-personas.webp" alt="Personas: in-house recruiter James Co and hiring lead Sherlok" loading="lazy">
-      </section>
-      <section class="sec" id="opportunities">
-        <h2>Design opportunities</h2>
-        <div class="body" style="gap:20px">
-          <p class="lead">Four problems to design around</p>
-          <div class="opps">
-            <div class="opp"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 9.8"/></svg></i><b>More options, less clutter.</b><p>Let a job carry unlimited versions while keeping a single, calm screen.</p></div>
-            <div class="opp"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 9.8"/></svg></i><b>Keep stages consistent</b><p>Compare the same stage across versions even as labels change.</p></div>
-            <div class="opp"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 9.8"/></svg></i><b>Make state unmistakable</b><p>Clearly distinguish drafts, published items, and archived content.</p></div>
-            <div class="opp"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 9.8"/></svg></i><b>Evolve safely</b><p>Changing a role must never endanger candidates already in it.</p></div>
-          </div>
-        </div>
-      </section>
-      <section class="sec" id="flow">
-        <h2>User flow</h2>
-        <div class="body" style="gap:8px">
-          <p class="lead">From draft to a frozen hiring cycle</p>
-          <p class="p">The spine of the product is a simple loop: shape a draft, publish it into a frozen version, manage candidates inside that version — and when the role needs to change, edit the draft and publish again as the next version.</p>
-        </div>
-        <img class="raw" src="assets/hire-userflow.webp" alt="User flow: Draft, Publish, New version, Manage, Change later" loading="lazy">
-      </section>
-      <section class="sec" id="decisions">
-        <h2>The decisions that mattered</h2>
-        <div class="body" style="gap:8px">
-          <p class="lead">Designing the versioning model</p>
-          <p class="p">Every choice below traces back to a usability principle — the goal was power that stays legible under pressure.</p>
-        </div>
-        <div class="dec">
-          <div class="txt"><h3>1 · One editable draft, many frozen versions</h3><p class="p" style="max-width:none">Borrowing from version control, there is exactly one editable draft. Publishing takes an immutable snapshot of the job + pipeline — that becomes V1, V2, V3. Candidates are tied to the version they applied to, never to the job itself, so editing the draft or publishing again can never disturb anyone mid-process.</p></div>
-          <img class="raw" src="assets/hire-versions.webp" alt="One editable job draft branching into V1 archived, V2 and V3 published versions" loading="lazy">
-        </div>
-        <div class="dec">
-          <div class="txt"><h3>2 · A single version switcher</h3><p class="p" style="max-width:none">A job can carry ten versions, but only one board shows at a time. Versions sit as small pills; selecting one swaps the whole board. The screen stays calm no matter how long the history grows — you recognise and pick rather than hold everything in your head.</p></div>
-          <figure class="fig2"><img class="raw" src="assets/hire-switcher.webp" alt="Job board with Draft, V1, V2, V3 version tabs" loading="lazy"><figcaption>Draft / V1 / V2 / V3 as pills - selecting one swaps the entire board below.</figcaption></figure>
-        </div>
-        <div class="dec">
-          <div class="txt"><h3>3 · Publishing is a confirmation, not a form</h3><p class="p" style="max-width:none">All job and pipeline edits happen on the safe draft. Publishing just freezes it — so the publish step shows exactly what's about to be sealed (a snapshot preview + a diff versus the last version) and whether to archive the current live cycle. An irreversible action is never taken blind.</p></div>
-          <figure class="fig2"><img class="raw" src="assets/hire-publish.webp" alt="Publish new version confirmation dialog" loading="lazy"><figcaption>The dashboard - each job shows its live version and colour-coded state.</figcaption></figure>
-        </div>
-        <div class="dec">
-          <div class="txt"><h3>4 · Draft, Published, Archived — never ambiguous</h3><p class="p" style="max-width:none">Three states, colour-coded and consistent everywhere: Draft (amber, editable), Published (green, live), Archived (gray, closed). Archived boards are read-only, guarding the candidates of a finished cycle. The user never has to guess what's live.</p></div>
-          <figure class="fig2"><img class="raw" src="assets/hire-states.webp" alt="Hirepipe dashboard" loading="lazy"><figcaption>The dashboard - each job shows its live version and colour-coded state.</figcaption></figure>
-        </div>
-        <div class="dec">
-          <div class="txt"><h3>5 · Candidates on a board that matches the mental model</h3><p class="p" style="max-width:none">Each stage is a column, each candidate a card, moved by drag. A distribution strip reads the version's health at a glance, and a detail panel shows a candidate's timeline and feedback. Rejecting never deletes — it tags and preserves, so a wrong call is always recoverable.</p></div>
-          <figure class="fig2"><img class="raw" src="assets/hire-board.webp" alt="Candidate detail panel over the pipeline board" loading="lazy"><figcaption>The dashboard - each job shows its live version and colour-coded state.</figcaption></figure>
-        </div>
-      </section>
-      <section class="sec" id="outcome">
-        <h2>Outcome</h2>
-        <p class="p">As a concept, success was about whether the model stays legible and safe under real complexity. Measured against the problems I set out with:</p>
-        <div class="kpi">
-          <div><b>10+</b><span>edge cases designed for</span></div>
-          <div><b>1 screen</b><span>to read any version's state</span></div>
-        </div>
-      </section>
-    </main>
-  </div>
-
-  <footer class="foot inset">
+  </aside>
+  <main class="cs-main">
+    <header class="cs-top rise">
+      <div class="cs-title"><h1>One Job, Many Hiring Cycles, And No Candidate Left Behind</h1><p>A recruitment workspace that treats every job as a series of versioned hiring cycles — so teams can evolve a role over time without ever losing the candidates already in flight.</p></div>
+      <img class="pan" src="assets/hire-hero.webp" alt="Hirepipe recruiter dashboard" width="1010" height="737">
+    </header>
+    <div class="dl"><div><b>Role</b><span>Product Designer<br>(UX + UI)</span></div><div><b>Scope</b><span>Research, flows,<br>UI, design system</span></div><div><b>Timeline</b><span>4 design sprints</span></div><div><b>Focus</b><span>Complex workflow<br>&amp; system design</span></div></div>
+    <section class="ss first" id="overview">
+      <h2>Project Overview</h2>
+      <div class="c">
+<p class="t16">Most applicant-tracking tools treat a job post as a single, static record. But in the real world a role is rarely hired for just once — it reopens, the salary shifts, the interview process changes, and each run attracts a different set of candidates. Editing one static post to reflect those changes quietly corrupts the history of everyone already in the pipeline.</p><p class="t16">HirePipe is a concept exploring a different model: a job isn't one record, it's a living draft plus a growing stack of <strong>frozen versions.</strong> The design challenge was to make that power feel simple — navigable, unambiguous, and safe — at enterprise scale.</p>
+      </div>
+    </section>
+    <section class="ss" id="problem">
+      <h2>The Problem</h2>
+      <div class="c">
+<div><p class="lead2">A job post is not a static entity:</p><p class="t16">I kept running into the same structural tension when I mapped how recruiters actually work</p></div><ol class="ol"><li><b>Roles repeat</b><span>The same position is published again and again over months, each time with tweaks to salary, requirements, or the hiring pipeline.</span></li><li><b>Candidates get stranded</b><span>Editing a live post to make those tweaks scrambles the people already mid-process — their stage, notes, and what they applied to.</span></li><li><b>History disappears</b><span>Overwriting a post erases the ability to compare cycles — which version attracted better candidates, where people dropped off.</span></li></ol><blockquote class="quote2"><q class="nq">How do you let a role evolve freely over time, without ever disturbing the candidates already inside it?</q></blockquote>
+      </div>
+    </section>
+    <section class="ss" id="research">
+      <h2>Research &amp; insights</h2>
+      <div class="c">
+<div><p class="lead2">Understanding how recruiters really work</p><p class="t16">I studied how established hiring platforms structure pipelines and reposting, and mapped the recurring behaviours into a few insights that shaped the whole system.</p></div><div class="cards3"><div class="icard sm"><b>Pipelines drift</b><p>Stages get renamed and reordered constantly, so the system can't rely on stage names to stay consistent.</p></div><div class="icard sm"><b>Reposting is a cycle</b><p>Recruiters think in "rounds" — the closest real pattern to versions is reopening a requisition.</p></div><div class="icard sm"><b>Nothing can be lost</b><p>Candidate records are kept for comparison, audit, and compliance — deletion is rarely acceptable.</p></div></div>
+      </div>
+    </section>
+    <section class="ss" id="competitors">
+      <h2>Competitor analysis</h2>
+      <div class="c">
+<div><p class="lead2">Grounded in how the category actually works</p><p class="t16">The model isn't invented from nothing — its building blocks exist, scattered, across real platforms. HirePipe unifies them into one explicit version-snapshot system.</p></div><div class="comp"><div class="ccard"><img class="clogo" src="assets/logo-workable.svg" alt="Workable" width="207" height="34"><p>Groups renamed stages under a standard type for consistent reporting. The real-world precedent for stable stage identity.</p></div><div class="ccard"><img class="clogo" src="assets/logo-flo.svg" alt="Flo" width="51" height="34"><p>When you delete a live-pipeline stage that holds candidates, it asks where to move them — the pipeline-evolution edge case in practice.</p></div><div class="ccard"><img class="clogo" src="assets/logo-greenhouse.svg" alt="Greenhouse" width="152" height="34"><p>Structured pipelines and per-stage analytics — the inspiration for the distribution strip and version-level reporting.</p></div></div>
+      </div>
+    </section>
+    <section class="fs" id="opportunities">
+      <div class="ft"><h2>Design opportunities</h2>
+<div class="opps"><div class="opp"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 9.5"/></svg></i><b>More options, less clutter.</b><p>Let a job carry unlimited versions while keeping a single, calm screen.</p></div><div class="opp"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 9.5"/></svg></i><b>Keep stages consistent</b><p>Compare the same stage across versions even as labels change.</p></div><div class="opp"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 9.5"/></svg></i><b>Make state unmistakable</b><p>Clearly distinguish drafts, published items, and archived content.</p></div><div class="opp"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 9.5"/></svg></i><b>Evolve safely</b><p>Changing a role must never endanger candidates already in it.</p></div></div>
+      </div>
+      
+    </section>
+    <section class="fs" id="flow">
+      <div class="ft"><h2>User flow</h2>
+<p class="lead2">From draft to a frozen hiring cycle</p><p class="t16">The spine of the product is a simple loop: shape a draft, publish it into a frozen version, manage candidates inside that version — and when the role needs to change, edit the draft and publish again as the next version.</p>
+      </div>
+      <img class="pan" src="assets/hire-flow.webp" alt="User flow: Draft, Publish, New version, Manage, Change later" loading="lazy">
+    </section>
+    <section class="fs" id="decisions">
+      <div class="ft"><h2>One editable draft, many frozen versions</h2>
+<p class="t16">Borrowing from version control, there is exactly one editable draft. Publishing takes an immutable snapshot of the job + pipeline — that becomes V1, V2, V3. Candidates are tied to the version they applied to, never to the job itself, so editing the draft or publishing again can never disturb anyone already in a pipeline.</p>
+      </div>
+      <img class="pan" src="assets/hire-versions-v2.webp" alt="One editable job draft branching into V1 archived, V2 and V3 published versions" loading="lazy">
+    </section>
+    <section class="fs">
+      <div class="ft"><h2>A single version switcher</h2>
+<p class="t16">A job can carry ten versions, but only one board shows at a time. Versions sit as small pills; selecting one swaps the whole board. The screen stays calm no matter how long the history grows — you recognise and pick rather than hold everything in your head.</p>
+      </div>
+      <figure class="fig"><img class="pan" src="assets/hire-switcher-v2.webp" alt="Job board with Draft, V1, V2, V3 version tabs" loading="lazy"><figcaption>Draft / V1 / V2 / V3 as pills - selecting one swaps the entire board below.</figcaption></figure>
+    </section>
+    <section class="fs">
+      <div class="ft"><h2>Publishing is a confirmation, not a form</h2>
+<p class="t16">All job and pipeline edits happen on the safe draft. Publishing just freezes it — so the publish step shows exactly what's about to be sealed (a snapshot preview + a diff versus the last version) and whether to archive the current live cycle. An irreversible action is never taken blind.</p>
+      </div>
+      <figure class="fig"><img class="pan" src="assets/hire-publish-v2.webp" alt="Publish new version confirmation dialog" loading="lazy"><figcaption>The publish dialog shows the snapshot that will be frozen and what happens to the live version.</figcaption></figure>
+    </section>
+    <section class="fs">
+      <div class="ft"><h2>Draft, Published, Archived — never ambiguous</h2>
+<p class="t16">Three states, colour-coded and consistent everywhere: Draft (amber, editable), Published (green, live), Archived (gray, closed). Archived boards are read-only, guarding the candidates of a finished cycle. The user never has to guess what's live.</p>
+      </div>
+      <figure class="fig"><img class="pan" src="assets/hire-states-v2.webp" alt="Hirepipe dashboard" loading="lazy"><figcaption>The dashboard - each job shows its live version and colour-coded state.</figcaption></figure>
+    </section>
+    <section class="fs">
+      <div class="ft"><h2>Candidates on a board that matches the mental model</h2>
+<p class="t16">Each stage is a column, each candidate a card, moved by drag. A distribution strip reads the version's health at a glance, and a detail panel shows a candidate's timeline and feedback. Rejecting never deletes — it tags and preserves, so a wrong call is always recoverable.</p>
+      </div>
+      <figure class="fig"><img class="pan" src="assets/hire-board-v2.webp" alt="Candidate detail panel over the pipeline board" loading="lazy"><figcaption>The candidate panel shows pipeline progress and feedback without leaving the board.</figcaption></figure>
+    </section>
+    <section class="ss" style="padding-top:130px" id="outcome">
+      <h2>Outcome</h2>
+      <div class="c">
+<p class="t16">As a concept, success was about whether the model stays legible and safe under real complexity. Measured against the problems I set out with:</p><div class="kpi"><div><b>10+</b><span>edge cases designed for</span></div><div><b>1 screen</b><span>to read any version's state</span></div></div>
+      </div>
+    </section>
+  </main>
+</div>
+<footer class="foot">
     <span>© 2026 Rayhan Raju</span>
     <div class="social">
-      <a href="https://www.linkedin.com/in/hirayhanraju/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg class="ic" viewBox="0 0 16 16" fill="none" aria-hidden="true"><g clip-path="url(#clip_li)"><path d="M13.6888 13.521H11.3084V9.83876C11.3084 8.9607 11.2925 7.83037 10.0703 7.83037C8.8305 7.83037 8.6408 8.78705 8.6408 9.77483V13.5207H6.26034V5.94861H8.54557V6.98342H8.57757C8.80627 6.59718 9.13674 6.27944 9.5338 6.06405C9.93085 5.84865 10.3796 5.74366 10.8323 5.76026C13.245 5.76026 13.6898 7.32778 13.6898 9.36703L13.6888 13.521ZM3.5744 4.91355C3.30118 4.9136 3.03408 4.83362 2.80688 4.68373C2.57968 4.53384 2.4026 4.32077 2.298 4.07146C2.1934 3.82215 2.16598 3.54781 2.21924 3.28311C2.27249 3.01842 2.40402 2.77527 2.59718 2.58441C2.79033 2.39355 3.03645 2.26355 3.30441 2.21086C3.57237 2.15816 3.85012 2.18513 4.10256 2.28836C4.355 2.39159 4.57078 2.56644 4.72261 2.7908C4.87444 3.01516 4.95551 3.27896 4.95556 3.54883C4.95559 3.72801 4.91989 3.90545 4.85049 4.07101C4.7811 4.23657 4.67939 4.387 4.55113 4.51373C4.42288 4.64046 4.2706 4.74099 4.10302 4.80959C3.93543 4.87819 3.75581 4.91352 3.5744 4.91355ZM4.76462 13.521H2.38169V5.94861H4.76462V13.521ZM14.8756 0.00108114H1.18552C0.874791 -0.00238244 0.575369 0.116146 0.353073 0.33062C0.130777 0.545094 0.00379224 0.837967 0 1.14488V14.7233C0.00366245 15.0304 0.130573 15.3234 0.352861 15.5381C0.57515 15.7528 0.874637 15.8716 1.18552 15.8683H14.8756C15.1871 15.8722 15.4874 15.7538 15.7106 15.5391C15.9338 15.3244 16.0615 15.031 16.0658 14.7233V1.1439C16.0614 0.836379 15.9335 0.543173 15.7104 0.328704C15.4872 0.114235 15.1869 -0.00395483 14.8756 0.000101043" fill="currentColor"/></g><defs><clipPath id="clip_li"><rect width="16" height="16" fill="white"/></clipPath></defs></svg></a>
-      <a href="https://x.com/hirayhanraju" target="_blank" rel="noopener" aria-label="X (Twitter)" title="X (Twitter)"><svg class="ic" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 14L7.03227 8.96773M8.96773 7.03227L14 14H10.6667L7.03227 8.96773L2 2H5.33333L8.96773 7.03227ZM14 2L8.96773 7.03227" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"/><path d="M2 2H5.33333L14 14H10.6667L2 2Z" fill="currentColor"/></svg></a>
-      <a href="https://dribbble.com/hirayhanraju" target="_blank" rel="noopener" aria-label="Dribbble" title="Dribbble"><svg class="ic" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8.00065 14.6666C11.6825 14.6666 14.6673 11.6818 14.6673 7.99992C14.6673 4.31802 11.6825 1.33325 8.00065 1.33325C4.31875 1.33325 1.33398 4.31802 1.33398 7.99992C1.33398 11.6818 4.31875 14.6666 8.00065 14.6666Z" fill="currentColor"/><path d="M14.6667 8.84301C14.0488 8.72715 13.4133 8.66675 12.7648 8.66675C9.19653 8.66675 6.0229 10.4951 4 13.3334" stroke-linejoin="round" stroke="var(--ibg)"/><path d="M12.6673 3.33325C10.581 5.7782 7.44592 7.33325 3.9404 7.33325C3.04356 7.33325 2.17097 7.23145 1.33398 7.03905" stroke-linejoin="round" stroke="var(--ibg)"/><path d="M9.74455 14.6667C9.91162 13.8573 9.99935 13.0191 9.99935 12.1605C9.99935 7.9498 7.88888 4.23097 4.66602 2" stroke-linejoin="round" stroke="var(--ibg)"/></svg></a>
-      <a href="https://www.behance.net/hirayhanraju" target="_blank" rel="noopener" aria-label="Behance" title="Behance"><svg class="ic" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M1.66602 8.00008C1.66602 5.01452 1.66602 3.52174 2.59351 2.59424C3.52101 1.66675 5.01379 1.66675 7.99935 1.66675C10.9849 1.66675 12.4777 1.66675 13.4052 2.59424C14.3327 3.52174 14.3327 5.01452 14.3327 8.00008C14.3327 10.9856 14.3327 12.4784 13.4052 13.4059C12.4777 14.3334 10.9849 14.3334 7.99935 14.3334C5.01379 14.3334 3.52101 14.3334 2.59351 13.4059C1.66602 12.4784 1.66602 10.9856 1.66602 8.00008Z" fill="currentColor"/><path d="M4.5 7.99008V6.00336C4.5 5.8153 4.65437 5.66284 4.84478 5.66284H6.16331C6.45657 5.66284 6.75797 5.7133 6.9765 5.90642C7.2103 6.11298 7.43703 6.43298 7.42577 6.86068C7.4127 7.35948 7.0485 7.94902 6.51487 7.99008C6.46223 7.99413 6.40991 7.99738 6.35741 7.99996M4.5 7.99008C4.52181 7.99008 4.54338 7.9901 4.56472 7.99014M4.5 7.99008V9.97842C4.5 10.1665 4.65439 10.3187 4.84479 10.3206C5.60524 10.3279 6.04769 10.3549 6.51487 10.3189C7.0485 10.2778 7.4127 9.68828 7.42577 9.18948C7.43703 8.76182 7.2103 8.44182 6.9765 8.23522C6.80613 8.08464 6.58539 8.02079 6.35741 7.99996M4.5 7.99008L4.56472 7.99014M6.35741 7.99996C5.88952 8.02287 5.40762 7.99169 4.56472 7.99014M6.35741 7.99996C6.29296 7.99407 6.22794 7.99162 6.16331 7.99162L4.56472 7.99014M11.1964 9.97708C10.9042 10.2601 9.48123 10.8196 8.96857 9.34708C8.9153 9.20008 8.8729 8.88302 8.89763 8.63808M8.89763 8.63808C8.93983 8.22102 9.1239 7.63602 9.8071 7.39728C10.7855 7.05542 11.4008 8.00442 11.5601 8.63808H8.89763ZM9.7253 6.00072H10.6321" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke="var(--ibg)"/></svg></a>
+      <a href="https://www.linkedin.com/in/hirayhanraju/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg class="ic" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.66602 6.66675V11.3334" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"/><path d="M7.33398 8.66675V11.3334M7.33398 8.66675C7.33398 7.56215 8.22938 6.66675 9.33398 6.66675C10.4386 6.66675 11.334 7.56215 11.334 8.66675V11.3334M7.33398 8.66675V6.66675" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"/><path d="M4.75 4.49992H4.66667M4.83333 4.49992C4.83333 4.59197 4.75871 4.66659 4.66667 4.66659C4.57462 4.66659 4.5 4.59197 4.5 4.49992C4.5 4.40787 4.57462 4.33325 4.66667 4.33325C4.75871 4.33325 4.83333 4.40787 4.83333 4.49992Z" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"/><path d="M2 8C2 5.17157 2 3.75736 2.87868 2.87868C3.75736 2 5.17157 2 8 2C10.8284 2 12.2427 2 13.1213 2.87868C14 3.75736 14 5.17157 14 8C14 10.8284 14 12.2427 13.1213 13.1213C12.2427 14 10.8284 14 8 14C5.17157 14 3.75736 14 2.87868 13.1213C2 12.2427 2 10.8284 2 8Z" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"/></svg></a>
+      <a href="https://x.com/hirayhanraju" target="_blank" rel="noopener" aria-label="X (Twitter)" title="X (Twitter)"><svg class="ic" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 14L7.03227 8.96773M8.96773 7.03227L14 14H10.6667L7.03227 8.96773L2 2H5.33333L8.96773 7.03227ZM14 2L8.96773 7.03227" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"/></svg></a>
+      <a href="https://dribbble.com/hirayhanraju" target="_blank" rel="noopener" aria-label="Dribbble" title="Dribbble"><svg class="ic" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M14.6673 7.99992C14.6673 11.6818 11.6825 14.6666 8.00065 14.6666C4.31875 14.6666 1.33398 11.6818 1.33398 7.99992C1.33398 4.31802 4.31875 1.33325 8.00065 1.33325C11.6825 1.33325 14.6673 4.31802 14.6673 7.99992Z" stroke="currentColor"/><path d="M14.6667 8.84301C14.0488 8.72715 13.4133 8.66675 12.7648 8.66675C9.19653 8.66675 6.0229 10.4951 4 13.3334" stroke-linejoin="round" stroke="currentColor"/><path d="M12.6673 3.33325C10.581 5.7782 7.44592 7.33325 3.9404 7.33325C3.04356 7.33325 2.17097 7.23145 1.33398 7.03905" stroke-linejoin="round" stroke="currentColor"/><path d="M9.74455 14.6667C9.91162 13.8573 9.99935 13.0191 9.99935 12.1605C9.99935 7.9498 7.88888 4.23097 4.66602 2" stroke-linejoin="round" stroke="currentColor"/></svg></a>
+      <a href="https://www.behance.net/hirayhanraju" target="_blank" rel="noopener" aria-label="Behance" title="Behance"><svg class="ic" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M1.66602 8.00008C1.66602 5.01452 1.66602 3.52174 2.59351 2.59424C3.52101 1.66675 5.01379 1.66675 7.99935 1.66675C10.9849 1.66675 12.4777 1.66675 13.4052 2.59424C14.3327 3.52174 14.3327 5.01452 14.3327 8.00008C14.3327 10.9856 14.3327 12.4784 13.4052 13.4059C12.4777 14.3334 10.9849 14.3334 7.99935 14.3334C5.01379 14.3334 3.52101 14.3334 2.59351 13.4059C1.66602 12.4784 1.66602 10.9856 1.66602 8.00008Z" stroke-linejoin="round" stroke="currentColor"/><path d="M4.5 7.99008V6.00336C4.5 5.8153 4.65437 5.66284 4.84478 5.66284H6.16331C6.45657 5.66284 6.75797 5.7133 6.9765 5.90642C7.2103 6.11298 7.43703 6.43298 7.42577 6.86068C7.4127 7.35948 7.0485 7.94902 6.51487 7.99008C6.46223 7.99413 6.40991 7.99738 6.35741 7.99996M4.5 7.99008C4.52181 7.99008 4.54338 7.9901 4.56472 7.99014M4.5 7.99008V9.97842C4.5 10.1665 4.65439 10.3187 4.84479 10.3206C5.60524 10.3279 6.04769 10.3549 6.51487 10.3189C7.0485 10.2778 7.4127 9.68828 7.42577 9.18948C7.43703 8.76182 7.2103 8.44182 6.9765 8.23522C6.80613 8.08464 6.58539 8.02079 6.35741 7.99996M4.5 7.99008L4.56472 7.99014M6.35741 7.99996C5.88952 8.02287 5.40762 7.99169 4.56472 7.99014M6.35741 7.99996C6.29296 7.99407 6.22794 7.99162 6.16331 7.99162L4.56472 7.99014M11.1964 9.97708C10.9042 10.2601 9.48123 10.8196 8.96857 9.34708C8.9153 9.20008 8.8729 8.88302 8.89763 8.63808M8.89763 8.63808C8.93983 8.22102 9.1239 7.63602 9.8071 7.39728C10.7855 7.05542 11.4008 8.00442 11.5601 8.63808H8.89763ZM9.7253 6.00072H10.6321" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"/></svg></a>
     </div>
   </footer>
 </div>
