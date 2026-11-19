@@ -3,18 +3,19 @@
   const cv = document.getElementById('wave');
   if (!cv) return;
   const ctx = cv.getContext('2d');
-  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  // Low internal resolution + CSS upscaling = naturally soft, cheap to draw
+    // Low internal resolution + CSS upscaling = naturally soft, cheap to draw
   const W = 220, H = 140;
   cv.width = W; cv.height = H;
 
-  const stops = [            // position across the ribbon, top -> bottom
-    [0.00, 'rgba(255,236,170,0)'],
-    [0.20, 'rgba(255,226,160,.85)'],  // warm yellow
-    [0.42, 'rgba(255,170,190,.95)'],  // pink
-    [0.66, 'rgba(176,160,255,.95)'],  // lavender
-    [0.84, 'rgba(150,185,255,.55)'],  // soft blue
-    [1.00, 'rgba(150,185,255,0)']
+  const stops = [            // position across the ribbon, top -> bottom (soft, many stops)
+    [0.00, 'rgba(255,238,190,0)'],
+    [0.12, 'rgba(255,232,180,.45)'],
+    [0.26, 'rgba(255,214,176,.75)'],  // peach
+    [0.40, 'rgba(255,184,198,.85)'],  // pink
+    [0.54, 'rgba(226,170,236,.85)'],  // orchid
+    [0.68, 'rgba(184,166,255,.80)'],  // lavender
+    [0.82, 'rgba(160,188,255,.50)'],  // soft blue
+    [1.00, 'rgba(160,188,255,0)']
   ];
 
   function frame(t) {
@@ -28,10 +29,11 @@
 
     for (let x = 0; x < W; x++) {
       const u = x / W;
-      const center = H * 0.36
-        + Math.sin(u * 5.2 + s * 0.55) * H * 0.16
-        + Math.sin(u * 2.3 - s * 0.35 + 1.3) * H * 0.10;
-      const thick = H * (0.30 + 0.08 * Math.sin(u * 3.1 + s * 0.4));
+      // gentle: small up/down so the ribbon drifts rather than waves
+      const center = H * 0.28
+        + Math.sin(u * 3.8 + s * 0.85) * H * 0.095
+        + Math.sin(u * 1.9 - s * 0.55 + 1.3) * H * 0.055;
+      const thick = H * (0.38 + 0.03 * Math.sin(u * 2.4 + s * 0.35));
       const top = center - thick / 2;
       const g = ctx.createLinearGradient(0, top, 0, top + thick);
       for (const [p, c] of stops) g.addColorStop(p, c);
@@ -42,7 +44,7 @@
 
   let raf, visible = true;
   const loop = t => { frame(t); raf = requestAnimationFrame(loop); };
-  const play = () => { cancelAnimationFrame(raf); if (reduce || !visible || document.hidden) { frame(8000); return; } raf = requestAnimationFrame(loop); };
+  const play = () => { cancelAnimationFrame(raf); if (!visible || document.hidden) { frame(8000); return; } raf = requestAnimationFrame(loop); };
   new IntersectionObserver(e => { visible = e[0].isIntersecting; play(); }).observe(cv);
   document.addEventListener('visibilitychange', play);
   play();

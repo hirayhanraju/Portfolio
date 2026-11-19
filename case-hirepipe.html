@@ -11,11 +11,17 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Geist:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script>try{if(localStorage.getItem('rr-theme')==='dark')document.documentElement.classList.add('rr-dark')}catch(e){}</script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=16">
+<script>try{localStorage.removeItem('rr-theme')}catch(e){}</script>
 </head>
-<body>
+<body class="dmh">
+<nav class="topnav" aria-label="Primary">
+  <a href="/">Home</a>
+  <a href="/about">About</a>
+  <a href="https://dribbble.com/hirayhanraju" target="_blank" rel="noopener">Visuals</a>
+  <a href="https://drive.google.com/file/d/1BG3UXGlWHrdBLkJpEtNa-a2Io6GpRVyj/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
+</nav>
 <div class="cs-page">
 <div class="cs">
   <aside class="cs-side">
@@ -75,7 +81,7 @@
     </section>
     <section class="fs" id="decisions">
       <div class="ft"><h2>One editable draft, many frozen versions</h2>
-<p class="t16">Borrowing from version control, there is exactly one editable draft. Publishing takes an immutable snapshot of the job + pipeline — that becomes V1, V2, V3. Candidates are tied to the version they applied to, never to the job itself, so editing the draft or publishing again can never disturb anyone already in a pipeline.</p>
+<p class="t16">Borrowing from version control, there is exactly one editable draft. Publishing takes an immutable snapshot of the job + pipeline — that becomes V1, V2, V3. Candidates are tied to the version they applied to, never to the job itself, so editing the draft or publishing again can never disturb anyone mid-process.</p>
       </div>
       <img class="pan" src="assets/hire-versions-v2.webp" alt="One editable job draft branching into V1 archived, V2 and V3 published versions" loading="lazy">
     </section>
@@ -121,6 +127,6 @@
     </div>
   </footer>
 </div>
-<script src="script.js"></script>
+<script src="script.js?v=12"></script>
 </body>
 </html>

@@ -11,21 +11,21 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script>try{if(localStorage.getItem('rr-theme')==='dark')document.documentElement.classList.add('rr-dark')}catch(e){}</script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=16">
+<script>try{localStorage.removeItem('rr-theme')}catch(e){}</script>
 </head>
-<body>
+<body class="has-sky">
+<nav class="topnav" aria-label="Primary">
+  <a href="/">Home</a>
+  <a href="/about" class="on" aria-current="page">About</a>
+  <a href="https://dribbble.com/hirayhanraju" target="_blank" rel="noopener">Visuals</a>
+  <a href="https://drive.google.com/file/d/1BG3UXGlWHrdBLkJpEtNa-a2Io6GpRVyj/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
+</nav>
 <div class="page">
-  <nav class="nav inset" aria-label="Primary">
-    <a href="/"><svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path d="M10.6 2.6a2.2 2.2 0 012.8 0l7 5.8c.5.4.8 1 .8 1.7V19a3 3 0 01-3 3h-3.2v-5.5a1 1 0 00-1-1h-3.8a1 1 0 00-1 1V22H5.8a3 3 0 01-3-3v-8.9c0-.7.3-1.3.8-1.7z"/></svg>Home</a>
-    <a href="/about" class="on"><svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M6 2.5h12A3.5 3.5 0 0121.5 6v12a3.5 3.5 0 01-3.5 3.5H6A3.5 3.5 0 012.5 18V6A3.5 3.5 0 016 2.5zm6 4a3 3 0 100 6 3 3 0 000-6zm-5 11.2c.9-2 2.8-3.2 5-3.2s4.1 1.2 5 3.2c.2.4-.1.8-.5.8h-9c-.4 0-.7-.4-.5-.8z"/></svg>About</a>
-    <a href="https://drive.google.com/file/d/1BG3UXGlWHrdBLkJpEtNa-a2Io6GpRVyj/view?usp=sharing" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M7 2h6.6c.5 0 1 .2 1.4.6l4.4 4.4c.4.4.6.9.6 1.4V19a3 3 0 01-3 3H7a3 3 0 01-3-3V5a3 3 0 013-3zm6 1.8V7a2 2 0 002 2h3.2zM7.5 14v4h1.2v-1.3h.7a1.35 1.35 0 000-2.7zm1.2 1h.7a.35.35 0 010 .7h-.7zm2.6-1v4h1.3a2 2 0 000-4zm1.2 1h.1a1 1 0 010 2h-.1zm3-1v4h1.2v-1.5h1.4v-1h-1.4V15h1.6v-1z"/></svg>Resume</a>
-    <button type="button" data-theme-toggle aria-label="Toggle dark mode"><svg class="ic" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4.6"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2.5v1.6M12 19.9v1.6M2.5 12h1.6M19.9 12h1.6M5.3 5.3l1.1 1.1M17.6 17.6l1.1 1.1M5.3 18.7l1.1-1.1M17.6 6.4l1.1-1.1"/></g></svg></button>
-  </nav>
-
+  
   <main class="stack">
-    <section class="block inset rise">
+    <section class="block rise">
       <h2 class="label">What I do</h2>
       <div class="prose">
         <p>I design and build digital products, websites, mobile apps, and other digital experiences. I enjoy working with teams, but I can also work independently and handle projects from start to finish.</p>
@@ -34,7 +34,7 @@
       </div>
     </section>
 
-    <section class="block inset rise">
+    <section class="block rise">
       <h2 class="label">Work experience</h2>
       <div class="exp">
         <div class="row"><div><b>Roxnor</b><em>Product Designer</em></div><time>Jan 2026 - Present</time></div>
@@ -42,7 +42,7 @@
       </div>
     </section>
 
-    <section class="block inset rise">
+    <section class="block rise">
       <h2 class="label">Kind words</h2>
       <div class="kind">
         <div class="avatars" role="tablist" aria-label="Recommendations">
@@ -62,7 +62,7 @@
     </section>
   </main>
 
-  <footer class="foot inset">
+  <footer class="foot">
     <span>© 2026 Rayhan Raju</span>
     <div class="social">
       <a href="https://www.linkedin.com/in/hirayhanraju/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg class="ic" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4.66602 6.66675V11.3334" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"/><path d="M7.33398 8.66675V11.3334M7.33398 8.66675C7.33398 7.56215 8.22938 6.66675 9.33398 6.66675C10.4386 6.66675 11.334 7.56215 11.334 8.66675V11.3334M7.33398 8.66675V6.66675" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"/><path d="M4.75 4.49992H4.66667M4.83333 4.49992C4.83333 4.59197 4.75871 4.66659 4.66667 4.66659C4.57462 4.66659 4.5 4.59197 4.5 4.49992C4.5 4.40787 4.57462 4.33325 4.66667 4.33325C4.75871 4.33325 4.83333 4.40787 4.83333 4.49992Z" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"/><path d="M2 8C2 5.17157 2 3.75736 2.87868 2.87868C3.75736 2 5.17157 2 8 2C10.8284 2 12.2427 2 13.1213 2.87868C14 3.75736 14 5.17157 14 8C14 10.8284 14 12.2427 13.1213 13.1213C12.2427 14 10.8284 14 8 14C5.17157 14 3.75736 14 2.87868 13.1213C2 12.2427 2 10.8284 2 8Z" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"/></svg></a>
@@ -104,6 +104,6 @@ window.KIND_WORDS = [
           "Beyond his professional strengths, what truly sets Rayhan apart is his character. He is humble, dependable, and genuinely one of the nicest people I have had the opportunity to work with. I highly recommend Rayhan to anyone looking for a talented designer and an even better human being."] }
 ];
 </script>
-<script src="script.js"></script>
+<script src="script.js?v=16"></script>
 </body>
 </html>

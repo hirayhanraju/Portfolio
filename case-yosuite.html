@@ -11,11 +11,17 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Geist:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script>try{if(localStorage.getItem('rr-theme')==='dark')document.documentElement.classList.add('rr-dark')}catch(e){}</script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=16">
+<script>try{localStorage.removeItem('rr-theme')}catch(e){}</script>
 </head>
-<body class="dm">
+<body class="dm yo">
+<nav class="topnav" aria-label="Primary">
+  <a href="/">Home</a>
+  <a href="/about">About</a>
+  <a href="https://dribbble.com/hirayhanraju" target="_blank" rel="noopener">Visuals</a>
+  <a href="https://drive.google.com/file/d/1BG3UXGlWHrdBLkJpEtNa-a2Io6GpRVyj/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
+</nav>
 <div class="cs-page">
 <div class="cs">
   <aside class="cs-side">
@@ -112,12 +118,6 @@
       </div>
       <div class="g2"><img class="pan" src="assets/yo-offcycle-1.webp" alt="Off-cycle payroll start screen" loading="lazy"><img class="pan" src="assets/yo-offcycle-2.webp" alt="Off-cycle payroll with mixed payments" loading="lazy"></div>
     </section>
-    <section class="fs">
-      <div class="ft"><h2>Running Payroll Outside the Schedule</h2>
-<p class="t16">How we let admins combine one-off payments into a single run without skipping any checks</p><ul class="bl"><li><b>Pre-Run Dashboard:</b> I designed an integration-readiness landing space to verify automatic system syncs before initiating an ad-hoc run.</li><li><b>Mixed-Payment Customization:</b> I built a flexible configuration panel to consolidate performance bonuses, final payouts, and contractor invoices into a unified run.</li><li><b>Dynamic Row Composition:</b> I engineered an inline "+ Add Payment" line-item builder that dynamically updates total gross amounts and employee aggregates on the fly.</li></ul>
-      </div>
-      <div class="g2"><img class="pan" src="assets/yo-offcycle-1.webp" alt="Off-cycle payroll start screen" loading="lazy"><img class="pan" src="assets/yo-offcycle-2.webp" alt="Off-cycle payroll with mixed payments" loading="lazy"></div>
-    </section>
     <section class="split fs"><div class="st"><h3>Add Payment and Manage Pay Components</h3><ul class="bl g16"><li><b>Termination:</b> I designed a structured framework to process complex final payouts, severance, and accrued leave balances for exiting team members.</li><li><b>Bonus:</b> I engineered an intuitive calculator to allocate one-off performance rewards with real-time tax adjustments.</li><li><b>Reimbursement:</b> I implemented a quick-entry logging system to credit business expenses and stipends directly into the active run.</li><li><b>Contractor:</b> I built a streamlined invoice entry interface tailored for 1099 staff that bypasses traditional employee tax structures.</li></ul></div><div class="stk"><img class="pan" src="assets/yo-addpay-1.webp" alt="Add payment modal, termination tab" loading="lazy"><img class="pan" src="assets/yo-addpay-2.webp" alt="Add payment modal, bonus tab" loading="lazy"><img class="pan" src="assets/yo-addpay-3.webp" alt="Add payment modal, reimbursement tab" loading="lazy"><img class="pan" src="assets/yo-addpay-4.webp" alt="Add payment modal, contractor tab" loading="lazy"></div></section>
     <section class="fs">
       <div class="ft"><h2>Benefits Settings</h2>
@@ -151,6 +151,6 @@
     </div>
   </footer>
 </div>
-<script src="script.js"></script>
+<script src="script.js?v=12"></script>
 </body>
 </html>
