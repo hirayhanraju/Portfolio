@@ -262,7 +262,7 @@ img{display:block;max-width:100%}
 .kind .prog i.run{animation:prog var(--dur,3s) linear forwards}
 .kind:hover .prog i.run,.kind:focus-within .prog i.run{animation-play-state:paused}
 @keyframes prog{to{width:100%}}
-@media (prefers-reduced-motion:reduce){.kind .prog{display:none}}
+
 
 /* Home hero gradient wave */
 .wave-bg{position:absolute;left:0;right:0;top:0;height:min(760px,100vh);z-index:0;pointer-events:none;overflow:hidden;
@@ -373,7 +373,7 @@ body.has-wave .page{position:relative;z-index:1}
 .rr-dark .t18{color:#b0b0b0}
 
 /* ===== v3: centered pill nav, sky background, new hero ===== */
-.topnav{position:fixed;top:24px;left:50%;transform:translateX(-50%);z-index:50;display:flex;align-items:center;gap:24px;padding:10px 20px;border-radius:100px;background:rgba(255,255,255,.5);border:1px solid #f3f4f6;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);font-size:14px;line-height:20px;letter-spacing:-.35px;white-space:nowrap}
+.topnav{position:fixed;top:24px;left:50%;transform:translateX(-50%);z-index:50;display:flex;align-items:center;gap:24px;padding:10px 20px;border-radius:100px;background:rgba(255,255,255,.4);border:1px solid #f3f4f6;-webkit-backdrop-filter:blur(7.5px);backdrop-filter:blur(7.5px);font-size:16px;line-height:24px;white-space:nowrap}
 .topnav a{color:#5a5c63;transition:color .2s}
 .topnav a:hover{color:#000}
 .topnav a.on{color:#000;font-weight:500}
@@ -389,7 +389,7 @@ body.has-sky .page{position:relative;z-index:1;padding-top:106px}
 .social a{width:36px;height:36px}
 .social a svg{width:16px;height:16px}
 @media (max-width:760px){
-  .topnav{gap:16px;padding:9px 16px;top:16px}
+  .topnav{gap:16px;padding:9px 16px;top:16px;font-size:14px}
   .hero{padding-top:120px}
   .hero h1{font-size:30px;line-height:38px}
   .hero h1 br{display:none}
@@ -397,10 +397,10 @@ body.has-sky .page{position:relative;z-index:1;padding-top:106px}
 }
 .dmh .fs h2{font-family:var(--dm)}
 /* Hero rotating words: blurred blue reveal, then a warm gradient wave that settles to normal black text */
-.swaph{color:#000;font-kerning:none;font-variant-ligatures:none;font-feature-settings:"kern" 0,"liga" 0,"calt" 0}
+.swaph{color:#151515;font-kerning:none;font-variant-ligatures:none;font-feature-settings:"kern" 0,"liga" 0,"calt" 0}
 .swaph .sw{font-weight:400;display:inline-block;white-space:nowrap}
 .swaph .sw i{font-style:normal;display:inline-block;white-space:pre;opacity:0;will-change:opacity,filter,color;
-  animation:rr-wave 1.4s linear forwards;animation-delay:var(--d,0s)}
+  animation:rr-wave 2s linear forwards;animation-delay:var(--d,0s)}
 .swaph .sw.done i{animation:none;opacity:1;filter:none;color:inherit;will-change:auto}
 @keyframes rr-wave{
   0%{opacity:0;filter:blur(7px);color:#9fc2f5}
@@ -412,7 +412,7 @@ body.has-sky .page{position:relative;z-index:1;padding-top:106px}
   66%{color:#e83a78}
   78%{color:#c41f78}
   90%{color:#4c1236}
-  100%{opacity:1;filter:blur(0);color:#000}
+  100%{opacity:1;filter:blur(0);color:#151515}
 }
 
 /* v4: DM Sans on Home, no left inset, nav on case pages */

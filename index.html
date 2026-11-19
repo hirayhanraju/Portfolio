@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=16">
+<link rel="stylesheet" href="style.css?v=19">
 <script>try{localStorage.removeItem('rr-theme')}catch(e){}</script>
 </head>
 <body class="has-sky home">
@@ -29,7 +29,7 @@
     <section class="hero rise">
       <div class="hero-text">
         <h1 class="swaph" aria-label="A product designer who thinks in outcomes, not just interfaces">A product designer who <span class="sw" data-sw="0">thinks in outcomes</span> <br>not just <span class="sw" data-sw="1">interfaces</span></h1>
-        <p>I focus on designing B2B SaaS and enterprise products, creating simple, scalable, and user-friendly experiences through research and thoughtful design.</p>
+        <p>I design SaaS platforms for businesses and mobile apps for everyday people — simple, scalable, and grounded in research.</p>
       </div>
       <div><button class="btn" type="button" data-copy="hirayhanraju@gmail.com"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="8.5" y="8.5" width="12.5" height="12.5" rx="3"/><path d="M15.5 8.5V6a3 3 0 00-3-3H6a3 3 0 00-3 3v6.5a3 3 0 003 3h2.5"/></svg>Copy mail</button></div>
     </section>
@@ -76,7 +76,7 @@
   </footer>
 </div>
 <div class="see" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M12 4.5c4.6 0 8.2 3 9.8 6.6.2.6.2 1.2 0 1.8-1.6 3.6-5.2 6.6-9.8 6.6s-8.2-3-9.8-6.6a2.3 2.3 0 010-1.8C3.8 7.5 7.4 4.5 12 4.5zm0 4a3.5 3.5 0 100 7 3.5 3.5 0 000-7z"/></svg>See project</div>
-<script src="script.js?v=16"></script>
+<script src="script.js?v=19"></script>
 <script src="wave.js?v=16"></script>
 <script>/* Hero rotating words */
 (() => {
@@ -84,7 +84,7 @@
   if (!h) return;
   const spans = [...h.querySelectorAll('.sw')];
   const pairs = [['thinks in outcomes', 'interfaces'], ['designs systems', 'screens']];
-  const SPEED = 420;          // px per second the wave travels
+  const SPEED = 260;          // px per second the wave travels
   const timers = new Map();
   const play = el => {
     const text = el.dataset.text;
@@ -105,7 +105,7 @@
     });
     clearTimeout(timers.get(el));
     // when the wave has passed, swap back to plain text so it renders exactly like the rest of the line
-    timers.set(el, setTimeout(() => { el.classList.add('done'); el.textContent = text; }, (last + 1.45) * 1000));
+    timers.set(el, setTimeout(() => { el.classList.add('done'); el.textContent = text; }, (last + 2.05) * 1000));
   };
   const show = k => {
     spans.forEach((el, j) => { el.dataset.text = pairs[k][j]; play(el); });
@@ -118,8 +118,8 @@
     if (document.hidden) return;
     k = (k + 1) % pairs.length;
     spans.forEach(el => { clearTimeout(timers.get(el)); el.textContent = ''; });
-    setTimeout(() => show(k), 400);
-  }, 3000);
+    setTimeout(() => show(k), 500);
+  }, 4500);
 })();
 </script>
 </body>

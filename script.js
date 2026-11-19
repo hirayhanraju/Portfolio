@@ -69,15 +69,14 @@
     });
     show(0);
 
-    /* Auto-rotate every 3s. Pauses only while a mouse hovers the card (desktop) or the popup is open. */
-    const DUR = 3000, bar = card.querySelector('.prog i');
-    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    /* Auto-rotate every 7s. Pauses only while a mouse hovers the card (desktop) or the popup is open. */
+    const DUR = 7000, bar = card.querySelector('.prog i');
     const canHover = matchMedia('(hover: hover) and (pointer: fine)').matches;
     let timer, hovering = false;
     const runBar = () => { if (!bar) return; bar.classList.remove('run'); void bar.offsetWidth; bar.style.setProperty('--dur', DUR + 'ms'); bar.classList.add('run'); };
     const stop = () => { clearInterval(timer); if (bar) bar.classList.remove('run'); };
     const start = () => {
-      stop(); if (reduce || hovering || ov.classList.contains('open') || document.hidden) return;
+      stop(); if (hovering || ov.classList.contains('open') || document.hidden) return;
       runBar(); timer = setInterval(() => { show(cur + 1); runBar(); }, DUR);
     };
     if (canHover) {
